@@ -61,7 +61,15 @@
 				<tr>
 					<td><label for="color">Color:</label></td>
 					<td>
-						<input type="color" name="color" id="color" value="#F1A420">
+						<input type="color" name="color" id="color" value="#999999">
+						<button type="button" onclick="changeColor()">Apply</button>
+
+					    <script>
+					        function changeColor(){
+					            let COLORRR = document.getElementById("color").value;
+					            document.body.style.backgroundColor = COLORRR;
+					        }
+					    </script>
 					</td>
 				</tr>
 				<tr>
