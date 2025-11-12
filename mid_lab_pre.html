@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Contact Form</title>
+	<style>
+		div{
+		  	width: 800px;
+		  	border: 300px ;
+		  	padding-left: 400px;
+		  	border-radius: 100px;
+		}
+		input{
+			width: 500px;  
+			height: 40px;  
+			padding: 5px; 
+			border-color: red;
+			border-radius: 10px;
+			margin-left: 100px;
+		}
+		.BUTTON{
+	      font-size: 24px;
+	      color: white;
+	      background-color: #33207F;
+	      border-radius: 5px;
+	      padding: 10px 20px;
+    	}
+    	.BUTTON:hover {
+	      	background-color: #FF0000;
+	    }
+</style>
+
+</head>
+	<h1>Contact US<h1>
+<body>
+	<div>
+		<fieldset>
+			<legend style="text-align: right; background-color: #33207F;padding:5px 10px; color:white; border-radius: 5px;">
+				Remember to fill in all fields
+			</legend>
+
+			<label  for="fname"><b>Name:</b></label>
+			<input type="text" id="fname" name="fname" ><br><br>
+
+			<label for="emal"><b>Email:</b></label>
+			<input type="text" id="emal" name="emal"><br><br>
+
+			<label for="Message"><b>Message:</b></label>
+			<input type="textbox" id="Message" name="Message" style="margin-left:66px;"><br><br>
+			
+			<input type="checkbox" id="sub" name="sub" value="sub">
+			<label for="sub"><b>Subccribe to</b></label><br>
+			<label for="sub"><b>newsletter</b></label><br>
+			
+			<button class="BUTTON">Send</button>
+		</fieldset>
+	</div>
+</body>
+</html>
+
