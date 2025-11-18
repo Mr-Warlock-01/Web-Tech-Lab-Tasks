@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice</title>
+	<script src="external.js"></script>
+
+</head>
+
+
+<body>
+<!-- 	<p id="p1">This is not a div.</p>
+	<button onclick="changeText();">Change the text</button>
+	<button onclick="reset()">RESET</button>
+	
+	<button onclick="AlertUser()">Alert F</button> -->
+
+	<form onsubmit="return vaidate(this);">
+		<label for="username">UserName</label>
+		<input type="text" name="username" id="username">
+		<span id="usernameError"> </span>
+		<input type="submit">
+	</form>
+
+
+
+<!-- 	<input type="text" id="i1" onkeydown="update()">
+	<span id="i2"></span> -->
+
+
+	<script>
+		function vaidate(pForm){
+			const username=pForm.username.value;
+			if(username== ""){
+				document.getElementById("usernameError").innerHTML="Plase fill username"
+				/*window.alert("Please fill up the username");*/
+				return false;
+			}
+			return true;
+
+		}
+	</script>
+
+</body>
+</html>

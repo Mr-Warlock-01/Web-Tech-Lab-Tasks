@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Home practice</title>
+</head>
+<body>
+    <p><b>Input:</b></p>
+    <input onkeyup="update()" type="text" id="inputBox">
+    <p><b>Output:</b></p>
+    <input type="text" id="outputBox">
+ 
+    <script>
+        function update() {
+            let text = document.getElementById("inputBox").value;
+            document.getElementById("outputBox").value = text
+        }
+    </script>
+</body>
+</html>
