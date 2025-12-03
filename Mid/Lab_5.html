@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<!-- <script src="lab 5"></script> -->
+</head>
+<body>
+ 
+	<form onsubmit="return validate(this);">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username">
+		<span id="errMsg"></span>
+		<input type="submit">
+	</form>
+ 
+	<div id="data"></div>
+ 
+	<script>
+		function validate(pForm) {
+			const uname = pForm.username.value;
+			const msg = document.getElementById("errMsg");
+			msg.innerHTML = "";
+			if (uname == "") {
+				/*window.alert("Please fill up the username");*/
+				msg.innerHTML = "Please fill up the username";
+			} else if (uname.length < 2) {
+				/*window.alert ("Username at least 2 characters");*/
+				msg.innerHTML = "Username at least 2 characters";
+			}
+			display(uname);
+			return false;
+		}
+ 
+		function display(pUname) {
+			const output = document.getElementById("data");
+ 
+			//const paragraph = document.createElement("p");
+			const data = document.createTextNode(pUname);
+			//paragraph.appendChild(data);
+ 			output.appendChild(data);
+		}
+	</script>
+ 
+</body>
+</html>

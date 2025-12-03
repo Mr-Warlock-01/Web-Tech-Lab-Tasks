@@ -59,8 +59,8 @@ function validate(pForm) {
   else{
     let at_sign = -1, dot_sign = -1;
     for (let i = 0; i < email.length; i++) {
-        if (email[i] == '@') at_sign = i;
-        if (email[i] == '.') dot_sign = i;
+        if (email[i] == '@'){at_sign = i;}
+        if (email[i] == '.'){dot_sign = i;}
     }
     if(at_sign==-1 || dot_sign==-1){
       document.getElementById('emailErrMsg').innerHTML = "Please enter valid email!";
